@@ -19,7 +19,7 @@ async function handleRequest(request) {
   let githubDomain;
   // Check if the path matches the allowed paths for GitHub content
   if (allowedGithubPath.test(path)) {
-    githubDomain = GITHUB_DOMAI; // Typo: should be 'GITHUB_DOMAIN'
+    githubDomain = GITHUB_DOMAIN; // Typo: should be 'GITHUB_DOMAIN'
   } else if (allowedRawPath.test(path)) {
     // If the path matches the allowed paths for raw GitHub content, use the raw GitHub domain and remove the '/raw' prefix from the path
     githubDomain = RAW_GITHUB_DOMAIN;
